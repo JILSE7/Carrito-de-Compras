@@ -7,17 +7,6 @@ const shoppingCart = document.querySelector('#carrito'),
 let articleList = [];
 
 
-
-
-// const agregarCurso = (e) => {
-//     e.preventDefault();
-//     const padre = e.target.parentElement.parentElement;
-//     console.log(padre);
-//     (e.target.localName == 'a') ? console.log('boton agregar'): null;
-// }
-
-
-
 cargarEventListener();
 
 function cargarEventListener() {
@@ -110,7 +99,7 @@ function carritoHTML() {
 //LIMPIANDO EL HTML CADA QUE AGREGAS NUEVOS CURSOS PARA QUE NO SE ENSIMEN
 function limpiarHTML() {
     //FORMA LENTA
-    cartContainer.innerHTML = '';
+    // cartContainer.innerHTML = '';
 
     //PERFORMANCE
     while (cartContainer.firstChild) {
@@ -135,8 +124,6 @@ function borrarCurso(e) {
 
 
 }
-
-
 
 function vaciarCarrito() {
     articleList = [];
