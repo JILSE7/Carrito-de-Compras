@@ -98,12 +98,12 @@ function carritoHTML() {
 
 //LIMPIANDO EL HTML CADA QUE AGREGAS NUEVOS CURSOS PARA QUE NO SE ENSIMEN
 function limpiarHTML() {
-    //FORMA LENTA
+    // // FORMA LENTA
     // cartContainer.innerHTML = '';
 
-    //PERFORMANCE
+    // //PERFORMANCE
     while (cartContainer.firstChild) {
-        cartContainer.remove(cartContainer.firstChild)
+        cartContainer.removeChild(cartContainer.firstChild)
     }
 }
 
